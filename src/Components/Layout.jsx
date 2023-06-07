@@ -18,7 +18,11 @@ const Layout = () => {
           <div id='nav-links-side'>
             <img id='logo' src={Logo} alt="" />
             <Link to='/' className='nav-link'>Home</Link>
-            <Link  className='nav-link'>My requests</Link>
+
+            
+
+            <Link to='Myrequests' className='nav-link'>My massages</Link>
+
           </div>
         </div>
         {/* <Hamburger color="white" className='menu-icon' onToggle={setnavbar} />
