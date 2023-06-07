@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Outlet, Link, useParams, } from 'react-router-dom'
 import "./layout.css"
+import Logo from "../Components/images/logo.png"
 
 
 
@@ -15,8 +16,13 @@ const Layout = () => {
             {/* <Link to='/' className='nav-link'> </Link> */}
           </div>
           <div id='nav-links-side'>
+            <img id='logo' src={Logo} alt="" />
             <Link to='/' className='nav-link'>Home</Link>
+
+            
+
             <Link to='Myrequests' className='nav-link'>My massages</Link>
+
           </div>
         </div>
         {/* <Hamburger color="white" className='menu-icon' onToggle={setnavbar} />
