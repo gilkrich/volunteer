@@ -28,8 +28,8 @@ const Loginpage = () => {
   return (
     <div className='Login-page'>
     <h2>Login</h2>
-    <TextField id="filled-basic" label="email" variant="filled" className='user-inputs' type='email' onChange={(e) => setemail(e.target.value)} />
-    <TextField id="filled-basic" label="Password" variant="filled" className='user-inputs' type='password' onChange={(e) => setUserPassword(e.target.value)} />
+    <TextField id="outlined-basic" label="email" variant="outlined" className='user-inputs' type='email' onChange={(e) => setemail(e.target.value)} />
+    <TextField id="outlined-basic" label="password" variant="outlined" className='user-inputs' type='password' onChange={(e) => setUserPassword(e.target.value)} />
     <div style={{ width: '100%', marginLeft: '113px' }}>
 
       <input type="checkbox" name="remember" id="remember" /><label htmlFor="remember">remember me</label>

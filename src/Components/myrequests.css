@@ -1,0 +1,83 @@
+#text-area{
+    resize: none;
+    width: 550px;
+    height: 300px;
+}
+
+.request-area{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputs{
+    width: 140px;
+}
+
+.form-request{
+  display: flex;
+  justify-content: center;
+}
+
+.request-submit-button{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(102, 222, 102);
+    border: 0;
+    color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.request-submit-button:hover{
+    opacity: 0.8;
+}
+
+.email-info-cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.email-div{
+    width: 100%;
+}
+
+.request-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.background-cont{
+    /* background: rgb(34,242,72);
+    background: linear-gradient(347deg, rgba(34,242,72,1) 0%, rgba(63,240,96,1) 28%, rgba(85,194,106,1) 63%, rgba(81,205,104,1) 86%, rgba(18,184,93,1) 100%); */
+    background: rgb(102,226,170);
+background: linear-gradient(347deg, rgba(102,226,170,1) 0%, rgba(129,228,148,1) 47%, rgba(128,210,143,1) 66%, rgba(68,201,102,1) 79%, rgba(18,184,93,1) 92%, rgba(27,189,100,1) 97%);
+    width: 100vw;
+    height: 450px;
+}
+
+.title-page{
+    color: white;
+    font-size: xxx-large;
+    position: absolute;
+    top: 20vh;
+}
+.title-second-page{
+    color: white;
+    font-size: xx-large;
+    position: absolute;
+    top: 35vh;
+}
+
+.title-input{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
