@@ -1,0 +1,71 @@
+.userpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 95vh;
+    background-color: #4158D0;
+  background-color: rgb(163, 222, 203);
+}
+
+.Login-page{
+    height: 520px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
+
+.user-buttons{
+    width: 280px;
+    height: 40px;
+    border : 0;
+    color: white;
+    background-color: palegreen;
+}
+
+.with{
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.with-button{
+    display: flex;
+    width: 90px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: 0;
+    box-shadow: 1px 1px 3px 3px gainsboro;
+}
+
+.with-button:hover{
+    display: flex;
+    width: 90px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: 0;
+    box-shadow: 1px 1px 3px 3px rgb(212, 208, 208);
+}
+
+.user-inputs{
+    width: 280px;
+}
+
+.sign-page{
+    height: 580px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
