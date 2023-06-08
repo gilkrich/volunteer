@@ -13,18 +13,19 @@ import Mymassages from './Mymassages';
 
 function App() {
   const [count, setCount] = useState(0)
+  const [logout,setloggedout]=useState()
 
   return (
       <div>
           <Routes>
-            <Route path='/' element={<Layout/>}>
+            <Route path='/' element={<Layout logout={logout} setloggedout={setloggedout}/>}>
               <Route path='/' element={<Homepage/>}></Route>
               <Route path='myrequests' element={<Myrequests/>}></Route>
               <Route path='mymassages' element={<Mymassages/>}></Route>
               {/* <Route path='*' element={<Notfound />}></Route> */}
               <Route path='user' element={<Userpage />}>
-                <Route path='' element={<Loginpage/>}></Route>
-                <Route path='Signup' element={<Signuppage/>}></Route>
+                <Route path='' element={<Loginpage logout={logout} setloggedout={setloggedout}/>}></Route>
+                <Route path='Signup' element={<Signuppage logout={logout} setloggedout={setloggedout}/>}></Route>
               </Route>
             </Route>
           </Routes>   

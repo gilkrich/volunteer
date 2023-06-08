@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oswald&display=swap');
+
+*{
+    font-family: oswald;
+}
+
 #text-area{
     resize: none;
     width: 550px;
