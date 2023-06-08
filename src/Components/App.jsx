@@ -9,6 +9,7 @@ import Signuppage from './Signuppage';
 import Myrequests from './Myrequests';
 import Mymassages from './Mymassages';
 import Profile from './Profile';
+import TermsOfUse from './TermsOfUse';
 
 
 
@@ -23,6 +24,7 @@ function App() {
               <Route path='/' element={<Homepage/>}></Route>
               <Route path='myrequests' element={<Myrequests/>}></Route>
               <Route path='mymassages' element={<Mymassages/>}></Route>
+              <Route path='TermsOfUse' element={<TermsOfUse/>}></Route>
               <Route path='profile' element={<Profile/>}></Route>
               {/* <Route path='*' element={<Notfound />}></Route> */}
               <Route path='user' element={<Userpage />}>

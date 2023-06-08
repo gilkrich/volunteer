@@ -3,7 +3,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-        font-family: Oswald;    
+    font-family: Oswald;    
     
 }
 
@@ -17,12 +17,17 @@
 }
 
 .img-home {
-    height: 50vh;
-    width: 40vw;
+    height: 80vh;
+    width: 80vw;
     margin-bottom: 5vw;
-    margin-top: 5vw;
+    margin-top: 3vw;
+    border-radius: 15px;
 }
 
+#About-us-header1{
+    text-align: center;
+    margin-bottom: 3vw;
+}
 
 .all-cards {
     display: flex;
@@ -65,15 +70,20 @@
 
 .frontSide,
 .frontSide::before {
-    background-color: #57995c;
+    background-color: #89cf8f;
 
 }
 
 .backSide,
 .backSide::before {
-    background-color: #73a077;
+    background-color: #ffffff;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #73a077;
     font-family: 'Dosis', sans-serif;
     padding: 5px;
+    color: #000000;
+    line-height: 1.7rem;
 }
 
 .backSide {
@@ -91,6 +101,10 @@
     position: absolute;
     z-index: -1;
     /* border-radius: 1em; */
+}
+
+.backSide >p {
+    font-family: Oswald;
 }
 
 .about-us-section {
@@ -280,6 +294,7 @@
 .five-stars {
     width: 10vw;
     height: 5vw;
+    mix-blend-mode: multiply;
 }
 
 @media screen and (max-width: 800px) {
@@ -353,6 +368,14 @@
 
     .ranks-header {
         margin-bottom: 10vw;
+    }
+
+    .img-home {
+        height: 50vh;
+        width: 80vw;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+        border-radius: 15px;
     }
    
 }

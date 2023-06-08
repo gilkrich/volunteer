@@ -1,0 +1,35 @@
+{
+    "results":[
+        {
+            "username": "Gil21",
+            "password":"1234567",
+            "email": "",
+            "proffesions":["Mechanic", "Baker"],
+            "Messages":[],
+            "age":"22",
+            "mobility": "true",
+            "phoneNumber":"0528708464"
+        },
+        {
+            "username": "Daniel8",
+            "password":"1234567",
+            "email": "daniel.brizel@gmail.com",
+            "proffesions":["Mechanic", "Electrician"],
+            "Messages":[],
+            "age":"23",
+            "mobility": "true",
+            "phoneNumber":"0556608006"
+        },
+        {
+            "username": "guyTs5",
+            "password":"1234567",
+            "email": "guyts@outlook.com",
+            "proffesions":["Baker", "Electrician"],
+            "Messages":[],
+            "age":"23",
+            "mobility": "false",
+            "phoneNumber":"0535326241"
+        }
+
+    ]
+}

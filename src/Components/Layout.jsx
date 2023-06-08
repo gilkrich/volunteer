@@ -106,10 +106,10 @@ const Layout = ({ logout, setloggedout }) => {
             <p className='nav-bar-text'>terms of use</p>
           </div>
           <div className='social-media'>
-            <img src={facebook} alt="" height='30px' className='social-media-images' />
-            <img src={github} alt="" height='30px' className='social-media-images' />
-            <img src={instagram} alt="" height='30px' className='social-media-images' />
-            <img src={twitter} alt="" height='30px' className='social-media-images' />
+            <a href="https://he-il.facebook.com/" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="" height='30px' className='social-media-images' /></a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><img src={github} alt="" height='30px' className='social-media-images' /></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="" height='30px' className='social-media-images' /></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="" height='30px' className='social-media-images' /></a>
           </div>
         </footer>
         {/* <div className='email'>
