@@ -38,22 +38,22 @@ const Myrequests = () => {
         const notarr = users.filter(item => item.email != user.email && checkproff(item.proffesions) == false)
         newarr.map(item => {
             if (checkproff(item.proffesions) == true) {
-                //    const emailtemplate = {
-                //     to_email:item.email,
-                //     to_name:item.username,  
-                //     from_name:user.username,
-                //     email_title: emailtitle,
-                //     email_text : emailtext,
-                //     email_phone:`https://wa.me/${user.phonenumber}?`,
-                //     reply_to:user.email,
-                //    }
-                //    console.log(item.email);
-                //    emailjs.send('service_03jkv54', 'template_2dsnlbo', emailtemplate, 'QEn71pL3Eu8fl57Hz')
-                //    .then((result) => {
-                //        console.log(result.text);
-                //    }, (error) => {
-                //        console.log(error.text);
-                //    });
+                   const emailtemplate = {
+                    to_email:item.email,
+                    to_name:item.username,  
+                    from_name:user.username,
+                    email_title: emailtitle,
+                    email_text : emailtext,
+                    email_phone:`https://wa.me/${user.phonenumber}?`,
+                    reply_to:user.email,
+                   }
+                   console.log(item.email);
+                   emailjs.send('service_03jkv54', 'template_2dsnlbo', emailtemplate, 'QEn71pL3Eu8fl57Hz')
+                   .then((result) => {
+                       console.log(result.text);
+                   }, (error) => {
+                       console.log(error.text);
+                   });
                 const obj = { from: { username: user.username, email: user.email, phone: user.phonenumber }, text: emailtext }
 
                 item.massages.push(obj)
@@ -66,29 +66,29 @@ const Myrequests = () => {
     }
 
 
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
-    //     emailjs.sendForm('service_03jkv54', 'template_dzxmgs1', form.current, 'QEn71pL3Eu8fl57Hz')
-    //         .then((result) => {
-    //             console.log(result.text);
-    //         }, (error) => {
-    //             console.log(error.text);
-    //         });
-    // };
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_03jkv54', 'template_dzxmgs1', form.current, 'QEn71pL3Eu8fl57Hz')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
         <div className='request-cont'>
 
-            <div className='background-cont'>
 
-            </div>
 
             <h1 className='title-page'>Make a request</h1>
 
             {localStorage.getItem('loggeduser') && <div>
+                <div className='background-cont'>
 
+              </div>
                 <h1 className='title-second-page'>Welcome {user.username} would you like to send a request </h1>
-                <h2>To make a new request just fill the inputs below and choose the proffesion that you need help with</h2>
+                <h2 style={{textAlign:'center',marginBottom:'60px',marginTop:'50px'}}>To make a new request just fill the inputs below and choose the proffesion that you need help with</h2>
                 <form ref={form} onSubmit={sendEmail} action="" className='form-request'>
 
                     <div className='request-area'>
@@ -114,7 +114,7 @@ const Myrequests = () => {
                         </div>
 
                         <div>
-                            <h3>Main massage content</h3>
+                            <h3 style={{textAlign:'center',marginTop:'20px'}}>Main massage content</h3>
                             <textarea name="email_text" id="text-area" onChange={(e) => setemailtext(e.target.value)}></textarea>
                         </div>
                         <input type="submit" value="submit" className='request-submit-button' onClick={() => canhelp()} />
@@ -126,9 +126,12 @@ const Myrequests = () => {
             }
 
 
-            {!localStorage.getItem('loggeduser') && <div>
-                <h1>To be able to send a request you need to be logged in first</h1>
-
+            {!localStorage.getItem('loggeduser') && <div className='background-cont-two'>
+                <h1 className='title-second-page'>To be able to send a request you need to be logged in first</h1>
+                <Link to='/user/Signup'>
+               <button className='new-sign'>Sign-Up</button>
+              </Link> 
+                 
             </div>}
 
         </div>

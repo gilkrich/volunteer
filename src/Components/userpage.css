@@ -27,6 +27,7 @@
     border : 0;
     color: white;
     background-color: rgb(127, 243, 127);
+    cursor: pointer;
 }
 .user-buttons:hover{
     opacity: 0.8;
@@ -79,7 +80,7 @@
     height: 300px;
     background-color: white;
     margin-top: 55px;
-    margin-bottom: 60px;
+    margin-bottom: 230px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -91,8 +92,9 @@
     height: 40px;
     border: 0;
     color: white;
-    background-color: lightgreen;
+    background-color: rgb(115, 232, 115);
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .choose-button:hover{
@@ -120,4 +122,13 @@
     border-radius: 20px;
     background-color: whitesmoke;
     border-color:lightgreen;
+    cursor: pointer;
+}
+
+#remember{
+    cursor: pointer;
+}
+
+#ismobile{
+    cursor: pointer;
 }

@@ -10,14 +10,20 @@ import Myrequests from './Myrequests';
 import Mymassages from './Mymassages';
 import Profile from './Profile';
 import TermsOfUse from './TermsOfUse';
+import data from './Data.json'
 
 
 
 function App() {
   const [count, setCount] = useState(0)
-  const [logout,setloggedout]=useState()
+  const [logout, setloggedout] = useState()
+
+  if (!localStorage.getItem('users')) {
+    localStorage.setItem('users', JSON.stringify(data.results))
+  }
 
   return (
+
       <div>
           <Routes>
             <Route path='/' element={<Layout logout={logout} setloggedout={setloggedout}/>}>
@@ -35,6 +41,7 @@ function App() {
             </Route>
           </Routes>   
      </div>
+
   )
 }
 
