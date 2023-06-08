@@ -88,7 +88,7 @@ const Layout = ({ logout, setloggedout }) => {
       <div>
         <footer className='footer'>
           <div className='nav-links-div'>
-            <Link className='footer-link nav-bar-text'>About us</Link>
+           <Link to={'/about'} className='footer-link nav-bar-text'> About us</Link>
             <p className='nav-bar-text'>Our buissnes department</p>
             <p className='nav-bar-text'>Privacy Policy</p>
             <p className='nav-bar-text'>Security Policy</p>

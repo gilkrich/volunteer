@@ -14,7 +14,9 @@
 .main-img {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
 
 .img-home {
     height: 80vh;

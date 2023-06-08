@@ -22,13 +22,10 @@ function App() {
           <Routes>
             <Route path='/' element={<Layout logout={logout} setloggedout={setloggedout}/>}>
               <Route path='/' element={<Homepage/>}></Route>
+              <Route path='/about' element={<Homepage/>}></Route>
               <Route path='myrequests' element={<Myrequests/>}></Route>
-
-             
               <Route path='TermsOfUse' element={<TermsOfUse/>}></Route>
-
               <Route path='mymassages' element={<Mymassages setloggedout={setloggedout} logout={logout}/>}></Route>
-
               <Route path='profile' element={<Profile/>}></Route>
               {/* <Route path='*' element={<Notfound />}></Route> */}
               <Route path='user' element={<Userpage />}>
