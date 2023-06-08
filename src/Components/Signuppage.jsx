@@ -52,8 +52,8 @@ const Signuppage = () => {
             users.push(person)
             localStorage.setItem('users', JSON.stringify(users))
             localStorage.setItem('loggeduser', JSON.stringify(person))
-            // setloggedout(false)
-            // navigate(-1)
+            setloggedout(false)
+            navigate(-1)
           }
           else {
             alert("email isnt valid")

@@ -8,7 +8,7 @@ import TextField from '@mui/material/TextField';
 
 
 
-const Loginpage = () => {
+const Loginpage = ({logout, setloggedout}) => {
     const navigate = useNavigate()
     const [email, setemail] = useState()
     const [usePassword, setUserPassword] = useState()
@@ -20,7 +20,7 @@ const Loginpage = () => {
       }
       else {
         localStorage.setItem('loggeduser', JSON.stringify(check))
-        setloggedout(false)
+        setloggedout(!logout)
         navigate(-1)
       }
   
