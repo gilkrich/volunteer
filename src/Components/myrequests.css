@@ -57,7 +57,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .background-cont{
@@ -65,8 +64,16 @@
     background: linear-gradient(347deg, rgba(34,242,72,1) 0%, rgba(63,240,96,1) 28%, rgba(85,194,106,1) 63%, rgba(81,205,104,1) 86%, rgba(18,184,93,1) 100%); */
     background: rgb(102,226,170);
 background: linear-gradient(347deg, rgba(102,226,170,1) 0%, rgba(129,228,148,1) 47%, rgba(128,210,143,1) 66%, rgba(68,201,102,1) 79%, rgba(18,184,93,1) 92%, rgba(27,189,100,1) 97%);
-    width: 100vw;
     height: 450px;
+}
+
+.background-cont-two{
+    /* background: rgb(34,242,72);
+    background: linear-gradient(347deg, rgba(34,242,72,1) 0%, rgba(63,240,96,1) 28%, rgba(85,194,106,1) 63%, rgba(81,205,104,1) 86%, rgba(18,184,93,1) 100%); */
+    background: rgb(102,226,170);
+background: linear-gradient(347deg, rgba(102,226,170,1) 0%, rgba(129,228,148,1) 47%, rgba(128,210,143,1) 66%, rgba(68,201,102,1) 79%, rgba(18,184,93,1) 92%, rgba(27,189,100,1) 97%);
+    width: 100vw;
+    height: 800px;
 }
 
 .title-page{
@@ -74,16 +81,34 @@ background: linear-gradient(347deg, rgba(102,226,170,1) 0%, rgba(129,228,148,1) 
     font-size: xxx-large;
     position: absolute;
     top: 20vh;
+    left: 42vw;
 }
 .title-second-page{
     color: white;
     font-size: xx-large;
     position: absolute;
     top: 35vh;
+    left: 32vw;
+
 }
 
 .title-input{
     display:flex;
     flex-direction: column;
     align-items: center;
+}
+
+.new-sign{
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #2b6852;
+    color: white;
+    position: absolute;
+    top: 49vh;
+    right: 48vw;
+}
+.new-sign:hover{
+   opacity: 0.8;
 }
