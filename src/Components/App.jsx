@@ -8,6 +8,7 @@ import Loginpage from './Loginpage';
 import Signuppage from './Signuppage';
 import Myrequests from './Myrequests';
 import Mymassages from './Mymassages';
+import Profile from './Profile';
 
 
 
@@ -21,6 +22,7 @@ function App() {
               <Route path='/' element={<Homepage/>}></Route>
               <Route path='myrequests' element={<Myrequests/>}></Route>
               <Route path='mymassages' element={<Mymassages/>}></Route>
+              <Route path='profile' element={<Profile/>}></Route>
               {/* <Route path='*' element={<Notfound />}></Route> */}
               <Route path='user' element={<Userpage />}>
                 <Route path='' element={<Loginpage/>}></Route>

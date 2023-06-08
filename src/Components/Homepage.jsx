@@ -9,12 +9,13 @@ import rank8 from "../Components/images/rank8.avif"
 import rank7 from "../Components/images/rank7.jpg"
 import rank9 from "../Components/images/rank9.avif"
 import rank5 from "../Components/images/rank5.png"
+import volunteers from "../Components/images/volunteersImg.jpg"
 
 const Homepage = () => {
   return (
     <div className='container-homepage'>
       <div className='main-img'>
-        <img className='img-home' src={Handi} alt="" />
+        <img className='img-home' src={volunteers} alt="" />
       </div>
       <div className='all-cards'>
         <div className="myCard">
@@ -53,6 +54,14 @@ const Homepage = () => {
         <div className='about-us'>
           <div className='about-us-header'><h1>Join the Pople4Good community:</h1></div>
           <div className='about-us-content'><p>We invite you to join our growing community of passionate individuals who believe in the power of volunteering. Together, we can create a positive and lasting impact on the causes we care about. Sign up today, explore the endless possibilities, and let your volunteering journey begin</p></div>
+      <Link to="user/Signup">
+      <button className="cta">
+            <span className="hover-underline-animation"> Sign up </span>
+            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+              <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+            </svg>
+          </button>
+      </Link>
         </div>
       </div>
       <div className='practice-section'>
@@ -100,35 +109,35 @@ const Homepage = () => {
         <div className='ranks-content'>
           <div className='top-ranks'>
             <div className='rank1'>
-              <h3>Alexander</h3>
-              <h4>"Highly recommended volunteering platform!"</h4>
+              <h2>Alexander</h2>
+              <h3>"Highly recommended volunteering platform!"</h3>
               <img className='img-rank1' src={rank8} alt="" />
               <img className='five-stars' src={fiveStars} alt="" />
             </div>
             <div className='rank1'>
-              <h3>Sophia</h3>
+              <h2>Sophia</h2>
               <img className='img-rank1' src={rank6} alt="" />
-              <h4>"Outstanding volunteer matching service!"</h4>
+              <h3>"Outstanding volunteer matching service!"</h3>
               <img className='five-stars' src={fiveStars} alt="" />
             </div>
             <div className='rank1'>
-              <h3>Nathan</h3>
-              <h4>"Discover meaningful volunteer experiences!"</h4>
+              <h2>Nathan</h2>
+              <h3>"Discover meaningful volunteer experiences!"</h3>
               <img className='img-rank1' src={rank5} alt="" />
               <img className='five-stars' src={fiveStars} alt="" />
             </div>
           </div>
           <div className='buttom-ranks'>
             <div className='rank1'>
-              <h3>Emma</h3>
+              <h2>Emma</h2>
               <img className='img-rank1' src={rank9} alt="" />
-              <h4>"Empowering volunteers, transforming communities!"</h4>
+              <h3>"Empowering volunteers, transforming communities!"</h3>
               <img className='five-stars' src={fiveStars} alt="" />
             </div>
             <div className='rank1'>
-              <h3>James</h3>
+              <h2>James</h2>
               <img className='img-rank1' src={rank7} alt="" />
-              <h4>"The platform made me feel significant through volunteering"</h4>
+              <h3>"The platform made me feel significant through volunteering"</h3>
               <img className='five-stars' src={fiveStars} alt="" />
             </div>
           </div>

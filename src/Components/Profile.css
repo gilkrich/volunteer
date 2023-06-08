@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.profile-container{
+    /* height: 50vw; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.circles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+    width: 90vw;
+}
+
+.circle{
+    height: 40vw;
+    width: 40vw;
+    border-style: none;
+    border-radius:600px;
+    background-color: rgb(55, 179, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle2{
+    height: 30vw;
+    width: 30vw;
+    border-style: none;
+    border-radius: 600px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 40rem;
+    border-style: solid;
+    border-radius: 15px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.left-part{
+    width: 20rem;
+    height: 20rem;
+}
+
+.right-part{
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
