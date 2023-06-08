@@ -12,7 +12,7 @@ const Mymassages = ({setloggedout,logout}) => {
        const userlog = JSON.parse(localStorage.getItem('loggeduser'))
        setuserlog(userlog)
     }
-  },[])
+  },[logout])
 
    function deletebutton(index) {
      const newuser = JSON.parse(localStorage.getItem('loggeduser'))
@@ -23,14 +23,14 @@ const Mymassages = ({setloggedout,logout}) => {
 
   return (
     <div id='my-massages-cont'>
-      <div className='background-cont'>
+      <h1 className='title-page'>My massages</h1>
+     {localStorage.getItem('loggeduser')&&<div>
+       <div className='background-cont'>
       </div>
-     {userlog2&&<div>
-      <h1 className='title-page'>Make a request</h1>
-      <h1 className='title-second-page'>Welcome {userlog2.username} would you like to send a request </h1>
+      <h1 className='title-second-page'>Welcome {userlog2?.username} would you like to send a request</h1>
       <h1 style={{textAlign:'center',marginBottom:'40px',marginTop:'40px'}}>My massages</h1>
       <div className='main-massage-div'>
-        {userlog2.massages.map((item,index)=>{
+        {userlog2?.massages?.map((item,index)=>{
           return(
             <div className='massage-template'>
          <div className='massage-cont' key={index}>
@@ -48,9 +48,12 @@ const Mymassages = ({setloggedout,logout}) => {
       </div>
 }
 
-      <div>
-
-      </div>
+     {!localStorage.getItem('loggeduser')&&<div className='background-cont-two'>
+                <h1 className='title-second-page'>To be able to get requests you need to be logged in first</h1>
+              <Link to='/user/Signup'>
+               <button className='new-sign'>Sign-Up</button>
+              </Link> 
+      </div>}
     </div>
   )
 }

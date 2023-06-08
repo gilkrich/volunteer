@@ -35,11 +35,6 @@ const Loginpage = ({logout, setloggedout}) => {
       <input type="checkbox" name="remember" id="remember" /><label htmlFor="remember">remember me</label>
     </div>
     <button className='user-buttons' onClick={() => checklogin()}>Login</button>
-    <p>Or login with</p>
-    <div className='with'>
-      <button className='with-button'> <img src='' alt="" width='20px' height='20px' /> Facebook</button>
-      <button className='with-button'><img src='' alt="" width='20px' height='20px' /> Google</button>
-    </div>
     <p>Not a member?<Link to='Signup'>Sign up here</Link></p>
   </div>
   )

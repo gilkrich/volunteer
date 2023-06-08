@@ -3,32 +3,32 @@
         {
             "username": "Gil21",
             "password":"1234567",
-            "email": "",
+            "email": "gildebil2@gmail.com",
             "proffesions":["Mechanic", "Baker"],
-            "Messages":[],
+            "massages":[],
             "age":"22",
-            "mobility": "true",
-            "phoneNumber":"0528708464"
+            "ismobile": "true",
+            "phonenumber":"0528708464"
         },
         {
             "username": "Daniel8",
             "password":"1234567",
             "email": "daniel.brizel@gmail.com",
             "proffesions":["Mechanic", "Electrician"],
-            "Messages":[],
+            "massages":[],
             "age":"23",
-            "mobility": "true",
-            "phoneNumber":"0556608006"
+            "ismobile": "true",
+            "phonenumber":"0556608006"
         },
         {
             "username": "guyTs5",
             "password":"1234567",
             "email": "guyts@outlook.com",
             "proffesions":["Baker", "Electrician"],
-            "Messages":[],
+            "massages":[],
             "age":"23",
-            "mobility": "false",
-            "phoneNumber":"0535326241"
+            "ismobile": "false",
+            "phonenumber":"0535326241"
         }
 
     ]
