@@ -23,26 +23,25 @@ function App() {
   }
 
   return (
-    <div>
-      <Routes>
-        <Route path='/' element={<Layout logout={logout} setloggedout={setloggedout} />}>
-          <Route path='/' element={<Homepage />}></Route>
-          <Route path='myrequests' element={<Myrequests />}></Route>
 
+      <div>
+          <Routes>
+            <Route path='/' element={<Layout logout={logout} setloggedout={setloggedout}/>}>
+              <Route path='/' element={<Homepage/>}></Route>
+              <Route path='/about' element={<Homepage/>}></Route>
+              <Route path='myrequests' element={<Myrequests/>}></Route>
+              <Route path='TermsOfUse' element={<TermsOfUse/>}></Route>
+              <Route path='mymassages' element={<Mymassages setloggedout={setloggedout} logout={logout}/>}></Route>
+              <Route path='profile' element={<Profile/>}></Route>
+              {/* <Route path='*' element={<Notfound />}></Route> */}
+              <Route path='user' element={<Userpage />}>
+                <Route path='' element={<Loginpage logout={logout} setloggedout={setloggedout}/>}></Route>
+                <Route path='Signup' element={<Signuppage logout={logout} setloggedout={setloggedout}/>}></Route>
+              </Route>
+            </Route>
+          </Routes>   
+     </div>
 
-          <Route path='TermsOfUse' element={<TermsOfUse />}></Route>
-
-          <Route path='mymassages' element={<Mymassages setloggedout={setloggedout} logout={logout} />}></Route>
-
-          {/* <Route path='profile' element={<Profile />}></Route> */}
-          {/* <Route path='*' element={<Notfound />}></Route> */}
-          <Route path='user' element={<Userpage />}>
-            <Route path='' element={<Loginpage logout={logout} setloggedout={setloggedout} />}></Route>
-            <Route path='Signup' element={<Signuppage logout={logout} setloggedout={setloggedout} />}></Route>
-          </Route>
-        </Route>
-      </Routes>
-    </div>
   )
 }
 

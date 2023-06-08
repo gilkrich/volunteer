@@ -1,5 +1,5 @@
-import React from 'react'
-import { Outlet, Link, useParams } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Outlet, Link, useParams, useLocation } from 'react-router-dom'
 import "./homepage.css"
 import recomends from "../Components/images/recomends.jpg"
 import fiveStars from "../Components/images/fivestars.webp"
@@ -11,6 +11,13 @@ import rank10 from "../Components/images/rank10.jpg"
 import volunteers from "../Components/images/volunteersImg.jpg"
 
 const Homepage = () => {
+  const location = useLocation()
+  useEffect(() => { 
+    if (location.pathname === '/about') {
+      window.scrollTo({ behavior: 'smooth', top: 650 })
+    }
+
+  }, [location.pathname])
   return (
     <div className='container-homepage'>
       <div className='main-img'>
