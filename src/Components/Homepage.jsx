@@ -1,14 +1,13 @@
 import React from 'react'
 import { Outlet, Link, useParams } from 'react-router-dom'
 import "./homepage.css"
-import Handi from "../Components/images/handi.png"
 import recomends from "../Components/images/recomends.jpg"
 import fiveStars from "../Components/images/fivestars.webp"
 import rank6 from "../Components/images/rank6.jpg"
 import rank8 from "../Components/images/rank8.avif"
 import rank7 from "../Components/images/rank7.jpg"
 import rank9 from "../Components/images/rank9.avif"
-import rank5 from "../Components/images/rank5.png"
+import rank10 from "../Components/images/rank10.jpg"
 import volunteers from "../Components/images/volunteersImg.jpg"
 
 const Homepage = () => {
@@ -17,6 +16,7 @@ const Homepage = () => {
       <div className='main-img'>
         <img className='img-home' src={volunteers} alt="" />
       </div>
+      <div id='About-us-header1'><h1>About-us</h1></div>
       <div className='all-cards'>
         <div className="myCard">
           <div className="innerCard">
@@ -44,24 +44,24 @@ const Homepage = () => {
               <p className="title">why you should use and join to our platform?</p>
             </div>
             <div className="backSide">
-              <p>Connecting People and Causes: At the core of Pople4Good is the commitment to connect people with causes that resonate with them. Whether you are a professional looking to share your expertise, a student eager to gain experience, or simply someone who wants to give back, our platform provides a seamless experience to explore diverse volunteer opportunities</p>
-              <p>Simple and User-Friendly: We've designed our platform with simplicity and user-friendliness in mind. Our intuitive interface allows you to easily navigate through volunteer opportunities. With just a few clicks, you can start making a difference and become an integral part of the volunteering community.</p>
+              <p><u>Connecting people and causes:</u> At the core of People4Good is the commitment to connect people with causes that resonate with them. Whether you're a professional looking to share your expertise, or simply someone who wants to give back, our platform provides a seamless experience for exploring diverse volunteer opportunities.</p>
+              <p><u>Simple and User-Friendly:</u> We've designed our platform with simplicity and user-friendliness in mind. Our intuitive interface allows you to easily navigate through volunteer opportunities. With just a few clicks, you can start making a difference and become an integral part of the volunteering community.</p>
             </div>
           </div>
         </div>
       </div>
       <div className='about-us-section'>
         <div className='about-us'>
-          <div className='about-us-header'><h1>Join the Pople4Good community:</h1></div>
+          <div className='about-us-header'><h1>Join the People4Good community:</h1></div>
           <div className='about-us-content'><p>We invite you to join our growing community of passionate individuals who believe in the power of volunteering. Together, we can create a positive and lasting impact on the causes we care about. Sign up today, explore the endless possibilities, and let your volunteering journey begin</p></div>
-      <Link to="user/Signup">
-      <button className="cta">
-            <span className="hover-underline-animation"> Sign up </span>
-            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-              <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
-            </svg>
-          </button>
-      </Link>
+          <Link to="user/Signup">
+            <button className="cta">
+              <span className="hover-underline-animation"> Sign up </span>
+              <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+              </svg>
+            </button>
+          </Link>
         </div>
       </div>
       <div className='practice-section'>
@@ -123,7 +123,7 @@ const Homepage = () => {
             <div className='rank1'>
               <h2>Nathan</h2>
               <h3>"Discover meaningful volunteer experiences!"</h3>
-              <img className='img-rank1' src={rank5} alt="" />
+              <img className='img-rank1' src={rank10} alt="" />
               <img className='five-stars' src={fiveStars} alt="" />
             </div>
           </div>
